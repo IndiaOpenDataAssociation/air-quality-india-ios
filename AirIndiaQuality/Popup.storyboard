@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m6L-zO-ymB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qPW-se-u8j">
+            <objects>
+                <viewController id="m6L-zO-ymB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zzT-Dt-LgG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZyA-Dy-DSj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aDu-mH-ZIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3L-2i-Ljx" customClass="LetsView" customModule="AirQualityIndia" customModuleProvider="target">
+                                <rect key="frame" x="20" y="138" width="335" height="390"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW9-UW-xY8">
+                                        <rect key="frame" x="0.0" y="8" width="335" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="uJe-9O-9E7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We couldn't connect with AirOwl. Please check below details and try again." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofY-1z-GHk">
+                                        <rect key="frame" x="20" y="48" width="295" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="sLy-Pw-9Hq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqQ-cr-4by">
+                                        <rect key="frame" x="20" y="118" width="295" height="192"/>
+                                        <string key="text">Make sure that you have active Internet connection in your Wifi
+
+Make sure that you are connected with Airowl wifi before Step-3
+
+Make sure you enter your wifi ID and password correct. [Case sensitive]
+
+Restart your AirOwl again to re-configure.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.70196078429999997" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDX-P1-TH2" customClass="LetsButton" customModule="AirQualityIndia" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="320" width="295" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OTd-KU-Qrp"/>
+                                        </constraints>
+                                        <state key="normal" title="DONE!">
+                                            <color key="titleColor" red="0.08235294118" green="0.64705882349999999" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.08235294118" green="0.64705882349999999" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cW9-UW-xY8" secondAttribute="trailing" id="6pP-Is-4Ha"/>
+                                    <constraint firstAttribute="height" constant="390" id="8uD-Q6-pZC"/>
+                                    <constraint firstItem="ofY-1z-GHk" firstAttribute="top" secondItem="cW9-UW-xY8" secondAttribute="bottom" constant="10" id="Ctt-cj-t6I"/>
+                                    <constraint firstAttribute="bottom" secondItem="rDX-P1-TH2" secondAttribute="bottom" constant="20" id="EXl-kK-9qH"/>
+                                    <constraint firstItem="rDX-P1-TH2" firstAttribute="leading" secondItem="O3L-2i-Ljx" secondAttribute="leading" constant="20" id="FeC-px-m0m"/>
+                                    <constraint firstAttribute="trailing" secondItem="ofY-1z-GHk" secondAttribute="trailing" constant="20" id="Fqx-Fg-Mhy"/>
+                                    <constraint firstAttribute="trailing" secondItem="rDX-P1-TH2" secondAttribute="trailing" constant="20" id="G1B-dk-VUL"/>
+                                    <constraint firstItem="ofY-1z-GHk" firstAttribute="leading" secondItem="O3L-2i-Ljx" secondAttribute="leading" constant="20" id="IzD-En-i6A"/>
+                                    <constraint firstItem="rDX-P1-TH2" firstAttribute="top" secondItem="VqQ-cr-4by" secondAttribute="bottom" constant="10" id="NLn-mi-jZG"/>
+                                    <constraint firstAttribute="trailing" secondItem="VqQ-cr-4by" secondAttribute="trailing" constant="20" id="NNg-kI-wE4"/>
+                                    <constraint firstItem="cW9-UW-xY8" firstAttribute="leading" secondItem="O3L-2i-Ljx" secondAttribute="leading" id="OOK-NA-3pw"/>
+                                    <constraint firstItem="VqQ-cr-4by" firstAttribute="leading" secondItem="O3L-2i-Ljx" secondAttribute="leading" constant="20" id="Py1-uX-i0y"/>
+                                    <constraint firstItem="VqQ-cr-4by" firstAttribute="top" secondItem="ofY-1z-GHk" secondAttribute="bottom" constant="10" id="TSK-m8-2oR"/>
+                                    <constraint firstItem="cW9-UW-xY8" firstAttribute="top" secondItem="O3L-2i-Ljx" secondAttribute="top" constant="8" id="gmC-Gr-qzn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="O3L-2i-Ljx" secondAttribute="trailing" constant="20" id="193-Du-W4Z"/>
+                            <constraint firstItem="O3L-2i-Ljx" firstAttribute="centerX" secondItem="aDu-mH-ZIQ" secondAttribute="centerX" id="6p5-4v-QHX"/>
+                            <constraint firstItem="O3L-2i-Ljx" firstAttribute="centerY" secondItem="aDu-mH-ZIQ" secondAttribute="centerY" id="a2s-L1-ho7"/>
+                            <constraint firstItem="O3L-2i-Ljx" firstAttribute="leading" secondItem="aDu-mH-ZIQ" secondAttribute="leading" constant="20" id="i7B-9Y-Uic"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93D-r4-r2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595.5" y="263.5"/>
+        </scene>
+        <!--PopupOPT Code-->
+        <scene sceneID="Ev6-QE-g7q">
+            <objects>
+                <viewController storyboardIdentifier="PopupOPTCode" autoresizesArchivedViewToFullSize="NO" id="vQL-gZ-3J9" customClass="PopupOPTCode" customModule="AirQualityIndia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="88Q-R7-kvf"/>
+                        <viewControllerLayoutGuide type="bottom" id="DJC-go-foq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hn4-hY-Y4v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP VERIFICATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rw-Gh-OPc">
+                                <rect key="frame" x="110" y="20" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verify OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOu-Tn-jaH">
+                                <rect key="frame" x="136" y="61" width="103" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0dy-GK-hsj"/>
+                                    <constraint firstAttribute="width" constant="103" id="0fY-RW-ZJS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGu-Wy-leS">
+                                <rect key="frame" x="137" y="122" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="98Q-hw-iYh"/>
+                                    <constraint firstAttribute="height" constant="40" id="SNz-VB-v5S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="VERIFY">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOkClick:" destination="vQL-gZ-3J9" eventType="touchUpInside" id="0jf-yo-3uy"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-JR-Pdg">
+                                <rect key="frame" x="136" y="101" width="103" height="1"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="RNa-K5-f4c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PGu-Wy-leS" firstAttribute="top" secondItem="e9K-JR-Pdg" secondAttribute="bottom" constant="20" id="2gW-3C-5t2"/>
+                            <constraint firstItem="PGu-Wy-leS" firstAttribute="centerX" secondItem="hn4-hY-Y4v" secondAttribute="centerX" id="4wE-pZ-qxK"/>
+                            <constraint firstItem="e9K-JR-Pdg" firstAttribute="centerX" secondItem="hn4-hY-Y4v" secondAttribute="centerX" id="RBz-kL-lrE"/>
+                            <constraint firstItem="7rw-Gh-OPc" firstAttribute="centerX" secondItem="hn4-hY-Y4v" secondAttribute="centerX" id="ROB-Ej-O6V"/>
+                            <constraint firstItem="kOu-Tn-jaH" firstAttribute="centerX" secondItem="hn4-hY-Y4v" secondAttribute="centerX" id="XjL-Ah-tUx"/>
+                            <constraint firstItem="e9K-JR-Pdg" firstAttribute="top" secondItem="kOu-Tn-jaH" secondAttribute="bottom" id="bMD-Qi-zEt"/>
+                            <constraint firstItem="7rw-Gh-OPc" firstAttribute="top" secondItem="88Q-R7-kvf" secondAttribute="bottom" constant="20" id="nqi-WE-fMA"/>
+                            <constraint firstItem="e9K-JR-Pdg" firstAttribute="width" secondItem="kOu-Tn-jaH" secondAttribute="width" id="rNF-Jk-gqz"/>
+                            <constraint firstItem="DJC-go-foq" firstAttribute="top" secondItem="PGu-Wy-leS" secondAttribute="bottom" constant="20" id="tJK-iC-xTx"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="182"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEs-nD-xWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="325"/>
+        </scene>
+    </scenes>
+</document>
